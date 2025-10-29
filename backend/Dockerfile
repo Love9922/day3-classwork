@@ -1,10 +1,10 @@
 FROM node:18-alpine
 
-WORKDIR /APP
+WORKDIR /app
 
 COPY package*.json ./
 
-RUN nmp install
+RUN npm install
 
 COPY . .
 
